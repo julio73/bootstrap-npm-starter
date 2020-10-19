@@ -22,34 +22,19 @@
 // $body-color: purple;
 // $body-bg: #f5f5f5;
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans+Light&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+San&display=swap');
 
 $blue: #002E6D;
 $red: #F5333F;
 $orange: #EC6607;
 $cyan: #00A2E1;
+$cyan-variant: #147296;
 $green: #00A585;
 $secondary: #758592;
 $font-family-sans-serif: "Open Sans",-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 $headings-font-family: "Montserrat", $font-family-sans-serif;
-$font-family-sans-serif: "Open Sans", $font-family-sans-serif;
-$cyan-variant: #147296;
+$font-family-base: $font-family-sans-serif !default;
 
-$colors: (
-  "blue":       $blue,
-  // "indigo":     $indigo,
-  // "purple":     $purple,
-  // "pink":       $pink,
-  "red":        $red,
-  "orange":     $orange,
-  // "yellow":     $yellow,
-  "green":      $green,
-  // "teal":       $teal,
-  "cyan":       $cyan,
-  // "white":      $white,
-  // "gray":       $gray-600,
-  // "gray-dark":  $gray-800
-) !default;
 //
 // Bring in Bootstrap
 //
