@@ -15,14 +15,41 @@
 //
 
 // Toggle global options
-$enable-gradients: true;
-$enable-shadows: true;
+// $enable-gradients: true;
+// $enable-shadows: true;
 
 // Customize some defaults
-$body-color: purple;
-$body-bg: #f5f5f5;
+// $body-color: purple;
+// $body-bg: #f5f5f5;
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans+Light&display=swap');
 
+$blue: #002E6D;
+$red: #F5333F;
+$orange: #EC6607;
+$cyan: #00A2E1;
+$green: #00A585;
+$secondary: #758592;
+$font-family-sans-serif: "Open Sans",-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+$headings-font-family: "Montserrat", $font-family-sans-serif;
+$font-family-sans-serif: "Open Sans", $font-family-sans-serif;
+$cyan-variant: #147296;
 
+$colors: (
+  "blue":       $blue,
+  // "indigo":     $indigo,
+  // "purple":     $purple,
+  // "pink":       $pink,
+  "red":        $red,
+  "orange":     $orange,
+  // "yellow":     $yellow,
+  "green":      $green,
+  // "teal":       $teal,
+  "cyan":       $cyan,
+  // "white":      $white,
+  // "gray":       $gray-600,
+  // "gray-dark":  $gray-800
+) !default;
 //
 // Bring in Bootstrap
 //
@@ -31,25 +58,25 @@ $body-bg: #f5f5f5;
 //
 // Import all of Bootstrap's CSS
 
-// @import "bootstrap/scss/bootstrap";
+@import "bootstrap/scss/bootstrap";
 
 // Option 2
 //
 // Import just the styles you need. Note that some stylesheets are required no matter what.
 
-@import "bootstrap/scss/functions"; // Required
-@import "bootstrap/scss/variables"; // Required
-@import "bootstrap/scss/mixins"; // Required
+// @import "bootstrap/scss/functions"; // Required
+// @import "bootstrap/scss/variables"; // Required
+// @import "bootstrap/scss/mixins"; // Required
 // @import "bootstrap/scss/root";
-@import "bootstrap/scss/reboot"; // Required
-@import "bootstrap/scss/type";
+// @import "bootstrap/scss/reboot"; // Required
+// @import "bootstrap/scss/type";
 // @import "bootstrap/scss/images";
 // @import "bootstrap/scss/code";
-@import "bootstrap/scss/grid";
+// @import "bootstrap/scss/grid";
 // @import "bootstrap/scss/tables";
 // @import "bootstrap/scss/forms";
-@import "bootstrap/scss/buttons";
-@import "bootstrap/scss/transitions";
+// @import "bootstrap/scss/buttons";
+// @import "bootstrap/scss/transitions";
 // @import "bootstrap/scss/dropdown";
 // @import "bootstrap/scss/button-group";
 // @import "bootstrap/scss/input-group"; // Requires forms
@@ -65,9 +92,9 @@ $body-bg: #f5f5f5;
 // @import "bootstrap/scss/progress";
 // @import "bootstrap/scss/media";
 // @import "bootstrap/scss/list-group";
-@import "bootstrap/scss/close";
+// @import "bootstrap/scss/close";
 // @import "bootstrap/scss/toasts";
-@import "bootstrap/scss/modal"; // Requires transitions
+// @import "bootstrap/scss/modal"; // Requires transitions
 // @import "bootstrap/scss/tooltip";
 // @import "bootstrap/scss/popover";
 // @import "bootstrap/scss/carousel";
@@ -81,6 +108,15 @@ $body-bg: #f5f5f5;
 // Custom styles
 //
 
+// body {
+//   padding: 3rem;
+// }
 body {
-  padding: 3rem;
+  font-family: $font-family-sans-serif;
+}
+a {
+  color: $cyan;
+  &:hover{
+    color: $cyan-variant;
+  }
 }
